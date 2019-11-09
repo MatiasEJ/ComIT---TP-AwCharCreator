@@ -1,0 +1,390 @@
+@font-face {
+    font-family: "Amatic";
+    src: url("./AmaticSC-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Chrono Trigger';
+    src: url('Chrono-Trigger.woff2') format('woff2'),
+        url('Chrono-Trigger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Press Start K';
+    src: url('PressStartK.eot');
+    src: url('PressStartK.eot?#iefix') format('embedded-opentype'),
+        url('PressStartK.woff2') format('woff2'),
+        url('PressStartK.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    width: 317px;
+    height: 500px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+
+    background-repeat: no-repeat;
+
+    text-align: center;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    display: grid;
+
+    grid-template:
+        "header header header header"5vh "main main main main"75vh ". foot foot ."20vh / 0.25fr 1fr 1fr 0.25fr;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    /* background-color: #1c1412; */
+}
+
+
+
+
+.main {
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-area: main;
+    grid-template:
+        "titulo "10vh "logo "70vh /1fr;
+}
+
+.logo {
+    display: grid;
+    grid-area: logo;
+    grid-template:
+        "torch1 . torch2"
+        /1fr 8fr 1fr;
+}
+
+.torch {
+    grid-area: torch1;
+    width: 140%;
+    position: relative;
+    /* transform: scale(0.16); */
+    top: 136px;
+    right: 219px;
+    filter: brightness(73%);
+    z-index: 4;
+}
+
+.torch1 {
+    grid-area: torch2;
+    width: 168%;
+    position: relative;
+
+    top: 126px;
+    right: -225px;
+    z-index: 2;
+    filter: brightness(73%);
+}
+
+.titulo {
+    grid-area: titulo;
+    display: grid;
+    justify-content: center;
+    /* box-shadow: 7px -3px 6px 13px white; */
+}
+
+.col1,
+.col2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col1 {
+    grid-area: col1;
+}
+
+.col2 {
+    grid-area: col2;
+
+
+}
+
+.titulo p {
+    justify-content: center;
+    display: grid;
+    /* right: 78px; */
+    /* top: -4px; */
+    /* position: relative; */
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(252, 255, 216) 30%, rgb(232, 27, 27) 100%); */
+    /* background-color: #ad0404; */
+    width: 47%;
+    height: 69%;
+    margin: auto;
+    border-radius: 55px;
+    font-size: 1.8em;
+    z-index: 2;
+    font-family: 'Press Start K';
+    text-align: center;
+    color: #ff0202;
+    /* box-shadow: 0 0 14px 17px #445273; */
+    text-shadow: 1px 2px 1px #0c6c9ac2;
+}
+
+#eldos {
+    font-size: 3.2em;
+    text-align: center;
+    top: 14px;
+    /* right: -2px; */
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    display: grid;
+    /* background-color: red; */
+    width: 32%;
+    margin: auto;
+    border-radius: 55px;
+    font-size: 3.6em;
+    z-index: 0.9;
+    font-family: 'Press Start K';
+    text-align: center;
+    color: #ff0000;
+    /* box-shadow: 0 0 14px 17px #de0909; */
+    text-shadow: 2px 2px 1px #301467;
+    /* background-image: linear-gradient(red, yellow); */
+}
+
+
+
+.foot {
+    grid-row-gap: 10px;
+    font-family: 'Chrono Trigger';
+    justify-items: center;
+    display: grid;
+    align-items: center;
+    grid-area: foot;
+    /* color: #0c2140; */
+    z-index: 1;
+    font-size: 2rem;
+    grid-template:
+        ". bot1 ."
+        ". bot2 ."
+        ". bot3 ."
+        /1fr 2fr 1fr;
+}
+
+
+
+.bot1,
+.bot2,
+.bot3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 8;
+}
+
+.bot1 {
+    grid-area: bot1;
+}
+
+.bot2 {
+    grid-area: bot2;
+}
+
+.bot3 {
+    grid-area: bot3;
+}
+
+.bot4 {
+    grid-area: bot4;
+}
+
+.bot5 {
+    grid-area: bot5;
+}
+
+.bot6 {
+    grid-area: bot6;
+}
+
+.home {
+    grid-area: home;
+}
+
+.volver {
+    grid-area: volver;
+}
+
+
+
+
+
+.vestimenta {
+    position: absolute;
+    /* text-align: center; */
+    top: 24px;
+    /* margin: auto; */
+    /* display: flex; */
+    /* justify-content: center; */
+    right: 290px;
+}
+
+.cuerpo {
+    position: absolute;
+    top: 37px;
+    right: 65px;
+    /* margin: auto; */
+    /* display: flex; */
+}
+
+.hats {
+    z-index: 3;
+    position: absolute;
+    top: 16px;
+    right: -221px;
+}
+
+.chest {
+    top: -8px;
+    z-index: 3;
+    position: absolute;
+    top: 14px;
+    right: -224px;
+}
+
+.pants {
+    top: 31px;
+    left: 56px;
+    z-index: 2;
+    position: absolute;
+}
+
+.feets {
+    top: 18px;
+    left: 53px;
+    z-index: 2;
+    position: absolute;
+}
+
+.shield {
+    top: 13px;
+    left: 24px;
+    z-index: 5;
+    position: absolute;
+}
+
+.weapon {
+    top: 13px;
+    left: 16px;
+    z-index: 3;
+    position: absolute;
+}
+
+#music {
+    width: 15px;
+    height: 15px;
+    color: #c1b7b7;
+    background-color: #1c141200;
+    text-align: center;
+    /* justify-items: self-start; */
+    position: fixed;
+    right: 4px;
+    font-size: 20px;
+}
+
+.foot p {
+    box-shadow: 0 0 0px 3px #88dee663;
+    border-radius: 7px;
+    color: #3465c3;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 4px;
+    z-index: 8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@-webkit-keyframes menu {
+    0% {}
+
+    50% {
+        -webkit-transform: rotateX(150deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(350deg);
+    }
+}
+
+@keyframes menu {
+    0% {}
+
+    50% {
+        -webkit-transform: rotateX(150deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(350deg);
+    }
+}
+
+
+
+#log {
+    width: 101%;
+    margin: auto;
+    z-index: 1;
+}
+
+
+
+
+
+.alertPulse-css {
+    animation: alertPulse 750ms ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    background: #9A2727;
+    /* you need this to specify a color to pulse to */
+}
+
+@keyframes alertPulse {
+    0% {
+        background-color: #9A2727;
+        opacity: 1;
+    }
+
+    50% {
+        opacity: red;
+        opacity: 0.75;
+    }
+
+    100% {
+        opacity: #9A2727;
+        opacity: 1;
+    }
+}
