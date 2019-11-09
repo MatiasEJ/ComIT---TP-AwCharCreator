@@ -53,7 +53,10 @@ body {
     display: grid;
 
     grid-template:
-        "header header header header"5vh "main main main main"75vh ". foot foot ."20vh / 0.25fr 1fr 1fr 0.25fr;
+        "header header header header"15vh 
+        "main main main main"70vh 
+        ". foot foot ."15vh 
+        / 0.25fr 1fr 1fr 0.25fr;
 }
 
 .header {
@@ -355,7 +358,7 @@ a {
 
 
 #log {
-    width: 101%;
+   
     margin: auto;
     z-index: 1;
 }
